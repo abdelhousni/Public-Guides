@@ -42,7 +42,7 @@ This guide assumes basic knowledge of Windows and Linux systems and how Vagrant 
     ```
 * You could restart  WSL with ``wsl --shutdown`` in Powershell, but if you run into errors reboot your PC and try again
 
-* Navigate to somewhere on your ``C:\\`` drive in WSL (``/mnt/c/``) and create a folder.
+* Navigate to somewhere on your ``C:\\`` drive in WSL (``/mnt/c/``) and create a folder. **This is required due to how Vagrant and Hyper-V handles files.**
 * Then inside that folder create a file named ``vagrantfile``
 * Add the following into the file
     ```
