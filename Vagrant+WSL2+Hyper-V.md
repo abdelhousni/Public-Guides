@@ -1,7 +1,7 @@
 # Vagrant With Windows, WSL2 and Hyper-V
-To say getting this particular configuration working is a pain in the ass is a understatement. However, once it is working correctly you gain access to tools like Ansible and full performance VMs inside Windows. This guide covers the steps I followed to get things working correctly with this particular configuration. It is possible that something may not work for you however I have been able to reproduce this sucess on two Windows 11 Pro machines and expect this to work for others.
+To say getting this configuration working is a pain in the ass is an understatement. However, once it is working correctly you gain access to tools like Ansible and full performance VMs inside Windows. This guide covers the steps I followed to get things working correctly with this configuration. It is possible that something may not work for you however I have been able to reproduce this success on two Windows 11 Pro machines and expect this to work for others.
 
-This guide assumes basic knowledge of Windows and Linux systems and how Vagrant operates and you might need to do some additonal troubleshooting.
+This guide assumes basic knowledge of Windows and Linux systems and how Vagrant operates. Due to the difficulty of setting this up you may need to do some additional troubleshooting
 
 ## Requirements
 * Windows Professional - Hyper-V can only be installed on Windows Professional systems or higher
@@ -17,7 +17,7 @@ This guide assumes basic knowledge of Windows and Linux systems and how Vagrant 
 * Reboot your PC to finish the registry update and the Vagrant install
 
 ## WSL
-* Open WSL as a Windows Adminsitrator (Either by opening the WSL app or the Windows terminal application)
+* Open WSL as a Windows Administrator (Either by opening the WSL app or the Windows terminal application)
 * Update your repository to include the most recent version of Vagrant on your WSL install. (In my case I am using Ubuntu 20.04)
     ```
     curl -fsSL https://apt.releases.hashicorp.com/gpg | sudo apt-key add -
@@ -28,7 +28,7 @@ This guide assumes basic knowledge of Windows and Linux systems and how Vagrant 
     ```
     sudo apt install vagrant
     ```
-* Add the following variables to thje end of the ``./profile`` file and reload your session
+* Add the following variables to the end of the ``./profile`` file and refresh your source
     ```
     export VAGRANT_WSL_ENABLE_WINDOWS_ACCESS="1"
     ```
