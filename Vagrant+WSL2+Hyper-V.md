@@ -28,7 +28,7 @@ This guide assumes basic knowledge of Windows and Linux systems and how Vagrant 
     ```
     sudo apt install vagrant
     ```
-* Add the following variables to the end of the ``./profile`` file and refresh your source
+* Add the following variables to the end of the ``~/.profile`` file and refresh your source
     ```
     export VAGRANT_WSL_ENABLE_WINDOWS_ACCESS="1"
     ```
